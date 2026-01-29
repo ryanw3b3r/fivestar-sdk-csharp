@@ -1,0 +1,24 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <RootNamespace>FiveStarSupport</RootNamespace>
+    <Version>1.1.0</Version>
+    <Authors>Ryan Weber</Authors>
+    <Company>Ryan Weber Ltd</Company>
+    <Description>C# SDK for FiveStar Support feedback collection</Description>
+    <Copyright>Ryan Weber Ltd © 2025</Copyright>
+    <PackageProjectUrl>https://fivestar.support</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/ryanw3b3r/fivestar-sdk-csharp</RepositoryUrl>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageTags>feedback;support;sdk;api</PackageTags>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="System.Text.Json" Version="8.0.0" />
+  </ItemGroup>
+
+</Project>
