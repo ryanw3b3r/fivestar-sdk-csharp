@@ -125,7 +125,8 @@ public class FiveStarClient : IAsyncDisposable
             clientId = _clientId,
             customerId = customerId,
             email = options?.Email,
-            name = options?.Name
+            name = options?.Name,
+            metadata = options?.Metadata
         };
 
         var data = await PostAsync("/api/customers", payload, cancellationToken);
@@ -178,7 +179,8 @@ public class FiveStarClient : IAsyncDisposable
             description = options.Description,
             responseTypeId = options.TypeId,
             customerEmail = options.Email,
-            customerName = options.Name
+            customerName = options.Name,
+            metadata = options.Metadata
         };
 
         var data = await PostAsync("/api/responses", payload, cancellationToken);

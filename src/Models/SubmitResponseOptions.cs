@@ -9,5 +9,6 @@ public record SubmitResponseOptions(
     string Description,
     string TypeId,
     string? Email = null,
-    string? Name = null
+    string? Name = null,
+    object? Metadata = null  // Additional metadata as JSON object
 );

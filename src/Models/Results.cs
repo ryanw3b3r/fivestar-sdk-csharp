@@ -17,7 +17,8 @@ public record GenerateCustomerIdResult(
 /// </summary>
 public record RegisterCustomerOptions(
     string? Email = null,
-    string? Name = null
+    string? Name = null,
+    object? Metadata = null  // Additional metadata as JSON object
 );
 
 /// <summary>
